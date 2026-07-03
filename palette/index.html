@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>演習: カラーパレット</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+  <h1>カラーパレット</h1>
+
+  <p>
+    選択中：
+    <span
+      class="selected"
+      :style="{ backgroundColor: color }"
+    ></span>
+  </p>
+
+  <div class="palette">
+    <button
+      class="red"
+      @mouseenter="previewRed"
+      @mouseleave="clearPreview"
+      @click="selectRed"
+    ></button>
+
+    <button
+      class="blue"
+      @mouseenter="previewBlue"
+      @mouseleave="clearPreview"
+      @click="selectBlue"
+    ></button>
+  </div>
+
+  <p>{{ preview }}</p>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>

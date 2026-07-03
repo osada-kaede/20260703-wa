@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>自由演習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>ROF-MAOファンマーク図鑑</h1>
+
+    <p class="animal">{{ emoji }}</p>
+
+    <h2>{{ name }}</h2>
+
+    <p>{{ description }}</p>
+
+    <button @click="showAnimal('office')">加賀美ハヤト</button>
+    <button @click="showAnimal('ken')">剣持刀也</button>
+    <button @click="showAnimal('hosuto')">不破湊</button>
+    <button @click="showAnimal('taiyou')">甲斐田晴</button>
+  </div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

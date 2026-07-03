@@ -1,0 +1,33 @@
+.palette {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+button,
+.selected {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #333;
+}
+
+.selected {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.red {
+  background: #f00;
+}
+
+.blue {
+  background: #00f;
+}

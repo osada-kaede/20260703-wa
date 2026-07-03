@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>演習：動物図鑑</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>動物図鑑</h1>
+
+    <p class="animal">{{ emoji }}</p>
+
+    <h2>{{ name }}</h2>
+
+    <p>{{ description }}</p>
+
+    <button @click="showAnimal('dog')">犬</button>
+    <button @click="showAnimal('cat')">猫</button>
+    <button @click="showAnimal('rabbit')">うさぎ</button>
+  </div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
